@@ -1,5 +1,1 @@
-User-agent: *
-Allow: /
-Disallow: 
 
-Sitemap: https://lucaschaudet.com/sitemap.xml
