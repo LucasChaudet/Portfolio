@@ -1,9 +1,3 @@
-
-data/messages.log
-data/*.log
-
-vendor/
-
 .env
 .env.local
 .env.*.local

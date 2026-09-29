@@ -1,6 +1,12 @@
 (function () {
     'use strict';
 
+    /* Année courante dans le footer */
+    var yearEl = document.getElementById('year');
+    if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+    }
+
     /* Menu mobile */
     var navToggle = document.getElementById('navToggle');
     var mainNav = document.getElementById('mainNav');
@@ -135,17 +141,38 @@
             });
         });
 
+        var formSuccess = document.getElementById('formSuccess');
+
         contactForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+
             var allValid = Object.keys(fields).every(validateField);
             if (!allValid) {
-                event.preventDefault();
                 var firstInvalid = Object.keys(fields)
                     .map(function (key) { return fields[key]; })
                     .find(function (field) { return field.el && !field.el.checkValidity(); });
                 if (firstInvalid) {
                     firstInvalid.el.focus();
                 }
+                return;
             }
+
+            var name = fields.name.el.value.trim();
+            var email = fields.email.el.value.trim();
+            var subject = fields.subject.el.value.trim();
+            var message = fields.message.el.value.trim();
+
+            var body = 'Nom : ' + name + '\nE-mail : ' + email + '\n\n' + message;
+            var mailtoUrl = 'mailto:chaudetlucas@gmail.com'
+                + '?subject=' + encodeURIComponent('[Portfolio] ' + subject)
+                + '&body=' + encodeURIComponent(body);
+
+            window.location.href = mailtoUrl;
+
+            if (formSuccess) {
+                formSuccess.hidden = false;
+            }
+            contactForm.reset();
         });
     }
 })();

@@ -8,7 +8,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <?php include 'includes/header.php'; ?>
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="logo">Chaudet<span>Lucas</span></a>
+            <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav" id="mainNav">
+                <ul>
+                    <li><a href="index.html" class="active" aria-current="page">Accueil</a></li>
+                    <li><a href="projet.html">Projets</a></li>
+                    <li><a href="competence.html">Compétences</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" id="themeToggle" aria-label="Changer de thème" type="button">
+                    <span class="theme-icon" aria-hidden="true">🌙</span>
+                </button>
+            </nav>
+        </div>
+    </header>
     <main>
         <section class="hero reveal">
             <p class="eyebrow">Portfolio BTS SIO — Option SLAM</p>
@@ -21,8 +41,8 @@
             </p>
 
             <div class="cta-group">
-                <a href="competence.php" class="btn btn-primary">Voir mes compétences</a>
-                <a href="contact.php" class="btn btn-outline">Me contacter</a>
+                <a href="competence.html" class="btn btn-primary">Voir mes compétences</a>
+                <a href="contact.html" class="btn btn-outline">Me contacter</a>
                 <a href="CV_Chaudet_Lucas.pdf" class="btn btn-outline" download>Télécharger mon CV</a>
             </div>
         </section>
@@ -56,6 +76,11 @@
             </div>
         </section>
     </main>
-    <?php include 'includes/footer.php'; ?>
+    <footer>
+        <p>Chaudet Lucas — Cossé-le-Vivien — <a href="mailto:chaudetlucas@gmail.com">chaudetlucas@gmail.com</a></p>
+        <p class="footer-year">&copy; <span id="year"></span> — Portfolio BTS SIO SLAM</p>
+    </footer>
+    <button class="back-to-top" id="backToTop" aria-label="Retour en haut" type="button">↑</button>
+    <script src="script.js"></script>
 </body>
 </html>
