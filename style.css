@@ -496,11 +496,14 @@ footer a:hover {
         border-bottom: 1px solid var(--border);
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.3s ease;
+        visibility: hidden;
+        transition: max-height 0.3s ease, visibility 0s linear 0.3s;
     }
 
     .nav.is-open {
         max-height: 400px;
+        visibility: visible;
+        transition: max-height 0.3s ease, visibility 0s linear 0s;
     }
 
     .nav ul {
