@@ -2,7 +2,7 @@
 
 Audit réalisé le 29/09/2026 sur le dépôt <https://github.com/LucasChaudet/Portfolio>.
 
-Légende : ✅ OK · ⚠️ partiel · ❌ absent
+Notes possibles : **OK** · **Partiel** · **Absent**
 
 ## Grille d'audit
 
@@ -10,49 +10,49 @@ Légende : ✅ OK · ⚠️ partiel · ❌ absent
 
 | Critère | Note | Constat |
 |---|:-:|---|
-| Dépôt GitHub existant et accessible | ✅ | Dépôt public `LucasChaudet/Portfolio`, branche par défaut `main`. |
-| `.gitignore` adapté à la stack | ⚠️ → ✅ | Le `.gitignore` n'était pas versionné et n'ignorait que `data/messages.log`. Complété (`.env`, `vendor/`, logs, fichiers IDE/OS) et commité pendant ce TP. |
-| Historique de commits lisible | ⚠️ | 5 commits seulement, dont deux « first commit » ; pas de convention. Des commits au format *Conventional Commits* (`feat:`, `chore:`, `docs:`) ont été ajoutés pendant ce TP. |
-| Branche `main` protégée | ❌ | L'API GitHub indique `"protected": false` : les push directs sur `main` sont possibles. |
+| Dépôt GitHub existant et accessible | OK | Dépôt public `LucasChaudet/Portfolio`, branche par défaut `main`. |
+| `.gitignore` adapté à la stack | OK (corrigé) | Le `.gitignore` n'était pas versionné et n'ignorait que `data/messages.log`. Complété (`.env`, `vendor/`, logs, fichiers IDE/OS) et commité pendant ce TP. |
+| Historique de commits lisible | Partiel | 5 commits seulement, dont deux « first commit » ; pas de convention. Des commits au format *Conventional Commits* (`feat:`, `chore:`, `docs:`) ont été ajoutés pendant ce TP. |
+| Branche `main` protégée | Absent | L'API GitHub indique `"protected": false` : les push directs sur `main` sont possibles. |
 
 ### Build & Run
 
 | Critère | Note | Constat |
 |---|:-:|---|
-| Démarrage en une commande documentée | ⚠️ → ✅ | Le README ne contenait que le titre. Il documente maintenant `php -S localhost:8000`. |
-| Dépendances listées | ⚠️ | Aucune dépendance externe (PHP pur), mais pas de `composer.json` pour déclarer la version de PHP requise. Documentée dans le README (PHP 8.1+, `mbstring`). |
-| Pas de chemin absolu codé en dur | ✅ | Aucun chemin absolu ; les chemins sont relatifs ou basés sur `__DIR__`. |
+| Démarrage en une commande documentée | OK (corrigé) | Le README ne contenait que le titre. Il documente maintenant `php -S localhost:8000`. |
+| Dépendances listées | Partiel | Aucune dépendance externe (PHP pur), mais pas de `composer.json` pour déclarer la version de PHP requise. Documentée dans le README (PHP 8.1+, `mbstring`). |
+| Pas de chemin absolu codé en dur | OK | Aucun chemin absolu ; les chemins sont relatifs ou basés sur `__DIR__`. |
 
 ### Tests
 
 | Critère | Note | Constat |
 |---|:-:|---|
-| Des tests existent | ❌ | Aucun test. |
-| Les tests s'exécutent en une commande | ❌ | Sans objet tant qu'il n'y a pas de tests. |
+| Des tests existent | Absent | Aucun test. |
+| Les tests s'exécutent en une commande | Absent | Sans objet tant qu'il n'y a pas de tests. |
 
 ### Déploiement
 
 | Critère | Note | Constat |
 |---|:-:|---|
-| Méthode de déploiement connue et documentée | ⚠️ | Dépôt manuel (FTP) mentionné dans le README, mais ni hébergeur ni URL de production documentés. |
-| Environnement de staging distinct | ❌ | Uniquement le local et (éventuellement) la production. |
+| Méthode de déploiement connue et documentée | Partiel | Dépôt manuel (FTP) mentionné dans le README, mais ni hébergeur ni URL de production documentés. |
+| Environnement de staging distinct | Absent | Uniquement le local et (éventuellement) la production. |
 
 ### Monitoring
 
 | Critère | Note | Constat |
 |---|:-:|---|
-| URL de production monitorée | ❌ | Aucune URL de production renseignée, aucun monitoring. |
-| Logs accessibles | ⚠️ | Les messages de contact sont journalisés dans `data/messages.log` (protégé par `.htaccess`), mais pas de logs d'erreur applicatifs centralisés. |
+| URL de production monitorée | Absent | Aucune URL de production renseignée, aucun monitoring. |
+| Logs accessibles | Partiel | Les messages de contact sont journalisés dans `data/messages.log` (protégé par `.htaccess`), mais pas de logs d'erreur applicatifs centralisés. |
 
 ## Bilan
 
 Après les corrections faites pendant ce TP :
 
-| ✅ OK | ⚠️ Partiel | ❌ Absent |
+| OK | Partiel | Absent |
 |:-:|:-:|:-:|
 | 4 | 4 | 5 |
 
-(Avant le TP : 2 ✅ · 6 ⚠️ · 5 ❌)
+(Avant le TP : 2 OK · 6 partiels · 5 absents)
 
 ## Mes 3 priorités d'amélioration
 
