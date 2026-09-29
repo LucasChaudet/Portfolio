@@ -1,23 +1,18 @@
-# Données générées à l'exécution (messages du formulaire de contact)
+
 data/messages.log
 data/*.log
 
-# PHP / Composer
 vendor/
 
-# Variables d'environnement et secrets
 .env
 .env.local
 .env.*.local
 
-# Node.js (si des outils front sont ajoutés plus tard)
 node_modules/
 dist/
 
-# Logs
 *.log
 
-# Fichiers système et IDE
 .DS_Store
 Thumbs.db
 desktop.ini
