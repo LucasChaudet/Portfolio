@@ -3,27 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Page de compétences portfolio de Chaudet Lucas, développeur web spécialisé en HTML/CSS/JavaScript. Découvrez mes compétences et expériences professionnelles.">
+    <title>Compétences — Lucas Chaudet | Développeur web BTS SIO SLAM</title>
+    <meta name="description" content="Compétences de Lucas Chaudet : HTML, CSS, JavaScript, PHP, WordPress, Bootstrap, C#, SQL, modélisation de bases de données et administration de serveurs.">
+    <meta name="author" content="Lucas Chaudet">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://lucaschaudet.github.io/Portfolio/competence.html">
+    <meta name="theme-color" content="#0b0f1a" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#f5f6fb" media="(prefers-color-scheme: light)">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Portfolio de Lucas Chaudet">
+    <meta property="og:title" content="Compétences — Lucas Chaudet | Développeur web BTS SIO SLAM">
+    <meta property="og:description" content="Compétences de Lucas Chaudet : HTML, CSS, JavaScript, PHP, WordPress, Bootstrap, C#, SQL, modélisation de bases de données et administration de serveurs.">
+    <meta property="og:url" content="https://lucaschaudet.github.io/Portfolio/competence.html">
+    <meta property="og:image" content="https://lucaschaudet.github.io/Portfolio/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Lucas Chaudet — Portfolio BTS SIO option SLAM">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Compétences — Lucas Chaudet | Développeur web BTS SIO SLAM">
+    <meta name="twitter:description" content="Compétences de Lucas Chaudet : HTML, CSS, JavaScript, PHP, WordPress, Bootstrap, C#, SQL, modélisation de bases de données et administration de serveurs.">
+    <meta name="twitter:image" content="https://lucaschaudet.github.io/Portfolio/og-image.png">
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="stylesheet" href="style.css">
-    <title>Chaudet Lucas - Compétences</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://lucaschaudet.github.io/Portfolio/competence.html#webpage",
+          "url": "https://lucaschaudet.github.io/Portfolio/competence.html",
+          "name": "Compétences — Lucas Chaudet | Développeur web BTS SIO SLAM",
+          "description": "Compétences de Lucas Chaudet : HTML, CSS, JavaScript, PHP, WordPress, Bootstrap, C#, SQL, modélisation de bases de données et administration de serveurs.",
+          "inLanguage": "fr-FR",
+          "isPartOf": {
+            "@id": "https://lucaschaudet.github.io/Portfolio/#website"
+          },
+          "about": {
+            "@id": "https://lucaschaudet.github.io/Portfolio/#lucas-chaudet"
+          },
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Accueil",
+                "item": "https://lucaschaudet.github.io/Portfolio/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Compétences",
+                "item": "https://lucaschaudet.github.io/Portfolio/competence.html"
+              }
+            ]
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <header>
         <div class="header-inner">
-            <a href="index.html" class="logo">Chaudet<span>Lucas</span></a>
-            <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNav">
+            <a href="./" class="logo">Chaudet<span>Lucas</span></a>
+            <button class="nav-toggle" id="navToggle" data-testid="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNav">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
             <nav class="nav" id="mainNav">
                 <ul>
-                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="./">Accueil</a></li>
                     <li><a href="projet.html">Projets</a></li>
                     <li><a href="competence.html" class="active" aria-current="page">Compétences</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <button class="theme-toggle" id="themeToggle" aria-label="Changer de thème" type="button">
+                <button class="theme-toggle" id="themeToggle" data-testid="theme-toggle" aria-label="Changer de thème" type="button">
                     <span class="theme-icon" aria-hidden="true">🌙</span>
                 </button>
             </nav>
@@ -31,7 +92,8 @@
     </header>
     <main>
         <section class="page-title reveal">
-            <h2>Compétences</h2>
+            <h1>Compétences</h1>
+            <p class="lead">Développement web, programmation orientée objet, bases de données SQL et administration de postes : les compétences acquises en BTS SIO option SLAM.</p>
         </section>
 
         <section class="reveal">
@@ -112,6 +174,6 @@
         <p class="footer-year">&copy; <span id="year"></span> — Portfolio BTS SIO SLAM</p>
     </footer>
     <button class="back-to-top" id="backToTop" aria-label="Retour en haut" type="button">↑</button>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>

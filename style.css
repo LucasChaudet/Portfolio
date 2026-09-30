@@ -173,8 +173,9 @@ main {
     margin-bottom: 30px;
 }
 
-.page-title h2 {
+.page-title h1 {
     font-size: 2rem;
+    line-height: 1.2;
     border: none;
     padding: 0;
 }
@@ -195,7 +196,7 @@ main {
     margin-bottom: 14px;
 }
 
-.hero h2 {
+.hero h1 {
     font-size: clamp(2.2rem, 5vw, 3.2rem);
     font-weight: 800;
     letter-spacing: -0.02em;
@@ -539,4 +540,10 @@ footer a:hover {
     .nav-toggle.is-active span:nth-child(3) {
         transform: translateY(-7px) rotate(-45deg);
     }
+}
+
+.page-title .lead {
+    color: var(--text-light);
+    margin-top: 8px;
+    max-width: 680px;
 }

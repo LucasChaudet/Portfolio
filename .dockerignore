@@ -6,3 +6,11 @@
 Dockerfile
 .dockerignore
 compose.yml
+
+node_modules
+tests
+package.json
+package-lock.json
+playwright.config.ts
+playwright-report
+test-results

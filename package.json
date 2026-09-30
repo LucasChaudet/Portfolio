@@ -1,0 +1,25 @@
+{
+  "name": "portfolio-bts",
+  "version": "1.0.0",
+  "description": "Portfolio BTS SIO SLAM de Lucas Chaudet (site statique).",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:report": "playwright show-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucasChaudet/Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/LucasChaudet/Portfolio/issues"
+  },
+  "homepage": "https://github.com/LucasChaudet/Portfolio#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0"
+  }
+}

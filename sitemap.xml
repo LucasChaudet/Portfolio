@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://lucaschaudet.github.io/Portfolio/</loc></url>
-  <url><loc>https://lucaschaudet.github.io/Portfolio/projet.html</loc></url>
-  <url><loc>https://lucaschaudet.github.io/Portfolio/competence.html</loc></url>
-  <url><loc>https://lucaschaudet.github.io/Portfolio/contact.html</loc></url>
+  <url>
+    <loc>https://lucaschaudet.github.io/Portfolio/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://lucaschaudet.github.io/Portfolio/projet.html</loc>
+    <lastmod>2026-09-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lucaschaudet.github.io/Portfolio/competence.html</loc>
+    <lastmod>2026-09-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lucaschaudet.github.io/Portfolio/contact.html</loc>
+    <lastmod>2026-09-30</lastmod>
+    <priority>0.7</priority>
+  </url>
 </urlset>
