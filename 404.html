@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page introuvable — Lucas Chaudet</title>
+    <meta name="robots" content="noindex, follow">
+    <base href="/Portfolio/">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="./" class="logo">Chaudet<span>Lucas</span></a>
+            <button class="nav-toggle" id="navToggle" data-testid="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav" id="mainNav">
+                <ul>
+                    <li><a href="./">Accueil</a></li>
+                    <li><a href="projet.html">Projets</a></li>
+                    <li><a href="competence.html">Compétences</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" id="themeToggle" data-testid="theme-toggle" aria-label="Changer de thème" type="button">
+                    <span class="theme-icon" aria-hidden="true">🌙</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="page-title">
+            <h1>Page introuvable</h1>
+            <p class="lead">La page demandée n'existe pas ou a été déplacée.</p>
+        </section>
+        <section>
+            <div class="cta-group">
+                <a href="./" class="btn btn-primary">Retour à l'accueil</a>
+                <a href="projet.html" class="btn btn-outline">Voir mes projets</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Chaudet Lucas — Cossé-le-Vivien — <a href="mailto:chaudetlucas@gmail.com">chaudetlucas@gmail.com</a></p>
+        <p class="footer-year">&copy; <span id="year"></span> — Portfolio BTS SIO SLAM</p>
+    </footer>
+    <button class="back-to-top" id="backToTop" aria-label="Retour en haut" type="button">↑</button>
+    <script src="script.js" defer></script>
+</body>
+</html>
