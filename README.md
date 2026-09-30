@@ -41,6 +41,25 @@ Aucune dépendance à installer, aucune configuration `.env` n'est nécessaire.
 └── sitemap.xml
 ```
 
+## Lancer avec Docker
+
+Seul prérequis : [Docker Desktop](https://www.docker.com/products/docker-desktop/) (ou Docker Engine + Compose).
+
+```bash
+git clone https://github.com/LucasChaudet/Portfolio.git
+cd Portfolio
+cp .env.example .env
+docker compose up -d
+```
+
+Ouvrir ensuite <http://localhost:8080> (port modifiable via `WEB_PORT` dans `.env`).
+
+Arrêter le site :
+
+```bash
+docker compose down
+```
+
 ## Fonctionnement du formulaire de contact
 
 À l'envoi, `includes/contact-handler.php` valide les champs, envoie un e-mail via `mail()`
