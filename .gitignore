@@ -12,3 +12,6 @@ Thumbs.db
 desktop.ini
 .vscode/
 .idea/
+
+playwright-report/
+test-results/
