@@ -1,9 +1,9 @@
 import { test, expect } from '@playwright/test';
 
 const pages = [
-  { lien: 'Projets', url: /projet\.html$/, titre: 'Projets et parcours — Lucas Chaudet | BTS SIO SLAM' },
-  { lien: 'Compétences', url: /competence\.html$/, titre: 'Compétences — Lucas Chaudet | Développeur web BTS SIO SLAM' },
-  { lien: 'Contact', url: /contact\.html$/, titre: 'Contact — Lucas Chaudet | Portfolio BTS SIO SLAM' },
+  { lien: 'Projets', url: /projet\.html$/, titre: 'Chaudet Lucas - Projets' },
+  { lien: 'Compétences', url: /competence\.html$/, titre: 'Chaudet Lucas - Compétences' },
+  { lien: 'Contact', url: /contact\.html$/, titre: 'Chaudet Lucas - Contact' },
 ];
 
 for (const p of pages) {
